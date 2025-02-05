@@ -1,3 +1,14 @@
+//*****************************************************
+//**                                                 **
+//** By: Christian Seepold,                          **
+//** Thema: Kontaktbuch                              **
+//** Version 1.0                                     **
+//** Datum: 05.01.2025                               **
+//** Status: ready                                   **
+//**                                                 **
+//*****************************************************
+
+
 import javax.swing.*;
 import java.io.File;
 import java.io.FileReader;
@@ -50,7 +61,7 @@ public class Main {
                 file.createNewFile();
             }
 
-            FileReader reader = new FileReader(file);   // Konstruktor
+            FileReader reader = new FileReader(file);
             String gesamterText = "";
             int zeichen = reader.read();                // Es können nur Dezimalwerte der Buchstaben ausgelesen werden
             while(zeichen != -1){                       // Wird -1 erreicht, kann damit kein weiteres Zeichen gefunden werden, dateiende
